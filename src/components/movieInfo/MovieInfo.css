@@ -1,0 +1,19 @@
+.wrap_movieInfo {
+    display: flex;
+    column-gap: 50px;
+    margin-bottom: 20px;
+}
+
+.img_info {
+    width: 300px;
+}
+
+.text_info {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+.text_info > div {
+    margin: 10px 0;
+}

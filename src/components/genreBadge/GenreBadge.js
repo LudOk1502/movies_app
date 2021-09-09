@@ -2,7 +2,6 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {genresMovie} from "../../services/movie.api.service";
 import {genres_Movies} from "../../redux/actions";
-import MoviesListCard from "../moviesListCard/MoviesListCard";
 
 export default function GenreBadge({item}) {
     let state = useSelector(state => state);

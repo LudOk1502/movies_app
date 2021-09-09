@@ -24,7 +24,8 @@ export default function UserInfo() {
     let onSaveClick = () => {
         formState.password !== formState.password_confirm ?
             alert("Пароль не збігається") :
-            authenticationUser().then(value => dispatch(addUser(formState)));
+            formState.id = Math.round(Math.random() * 1000 + 1);
+        authenticationUser().then(value => dispatch(addUser(formState)));
         alert("На вказаний e-mail надіслано лист-підтвердження облікового запису.");
         setToggle('enter');
         setFormToggle('formFlex');

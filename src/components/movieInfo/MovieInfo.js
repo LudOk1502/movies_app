@@ -6,8 +6,9 @@ export default function MovieInfo({location: {state}}) {
 
     return (
         <div className={'wrap_movieInfo'}>
-            <div><img className={'img_info'} src={`https://image.tmdb.org/t/p/w400/${state.poster_path}`}
-                      alt={`${state.original_title}`}/></div>
+            <div className={'movies_list_card'}><img className={'img_info'}
+                                                     src={`https://image.tmdb.org/t/p/w400/${state.poster_path}`}
+                                                     alt={`${state.original_title}`}/></div>
             <div className={'text_info'}><h2>{state.original_title}<br/> ({state.release_date})</h2>
                 <div> Жанр:
                     {

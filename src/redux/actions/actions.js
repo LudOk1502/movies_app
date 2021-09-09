@@ -1,6 +1,5 @@
 import {
     ADD_USER,
-    CLEAR_STORE,
     DISCOVER_MOVIES,
     GENRES_MOVIES,
     MOVIES_BY_GENRE,

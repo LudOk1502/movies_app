@@ -5,6 +5,7 @@ import MovieInfo from "./components/movieInfo/MovieInfo";
 import MoviesByGenre from "./components/moviesByGenre/MoviesByGenre";
 import FormFilterMovies from "./components/formFilterMovies/FormFilterMovies";
 import Header from "./components/header/Header";
+import GenresBadges from "./components/genresBadges/GenresBadges";
 
 function App() {
 

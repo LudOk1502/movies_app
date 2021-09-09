@@ -9,7 +9,7 @@ const instance = axios.create({
 
 const discoverMovie = async (page) => await instance.get('/discover/movie?page=' + page);
 const genresMovie = async () => await instance.get('/genre/movie/list');
-const getMovieByGenre = async (id) => await instance.get('/discover/movie?with_genres=' + id);
+const getMovieByGenre = async (id, page) => await instance.get('/discover/movie?with_genres=' + id + '&page=' + page);
 const searchMovie = async (text, page) => await instance.get('/search/movie?query=' + text + '&page=' + page);
 const authenticationUser = async () => await instance.get('/authentication/token/new');
 const guest_session = async () => await instance.get('/authentication/guest_session/new');

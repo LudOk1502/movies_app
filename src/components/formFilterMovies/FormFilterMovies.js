@@ -28,6 +28,7 @@ export default function FormFilterMovies(page) {
     }
     let onClickGenre = () => {
         getMovieByGenre(genreChange).then(value => dispatch(moviesByGenre(value.data.results)))
+
     }
     let onClickSearchMovie = () => {
         searchMovie(search).then(value => dispatch(search_Movie(value.data.results)))

@@ -22,7 +22,7 @@ export default function GenresBadges({page}) {
     }
     useEffect(() => {
         getMovieByGenre(genreBadgeChange, page).then(value => dispatch(moviesByGenre(value.data.results)))
-    }, [genreBadgeChange]);
+    }, [genreBadgeChange, page]);
 
     return (
         <div className={'badge_box'}>{
